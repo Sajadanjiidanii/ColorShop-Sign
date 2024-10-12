@@ -74,6 +74,7 @@ function BWMsignUp(){
                 if( BWMSignUpPasswordValue == BWMSignUprePasswordValue){
                     localStorage.setItem("Name",JSON.stringify(BWMSignUpNameValue));
                     localStorage.setItem("Password",JSON.stringify(BWMSignUpPasswordValue));
+                    location.href = "https://sajadanjiidanii.github.io/ColorShop/";
                 }else{
                     $.body.insertAdjacentHTML("afterbegin","<div class=\"alert\"><h1 id=\"massageAlert\">پسورد درست تکرار نشده است !</h1></div>");
                     setTimeout(remAlert,2000);
@@ -121,6 +122,7 @@ function SWMsignUp(){
                 if( SWMSignUpPasswordValue == SWMSignUprePasswordValue){
                     localStorage.setItem("Name",JSON.stringify(SWMSignUpNameValue));
                     localStorage.setItem("Password",JSON.stringify(SWMSignUpPasswordValue));
+                    location.href = "https://sajadanjiidanii.github.io/ColorShop/";
                 }else{
                     $.body.insertAdjacentHTML("afterbegin","<div class=\"alert\"><h1 id=\"massageAlert\">پسورد درست تکرار نشده است !</h1></div>");
                     setTimeout(remAlert,2000);
@@ -168,6 +170,7 @@ function BWMsignIn(){
         if( isPassWord ){
             $.body.insertAdjacentHTML("afterbegin","<div class=\"alert tureAlert\"><h1 id=\"massageAlert\">خوش آمدید :)</h1></div>");
             setTimeout(remAlert,2000);
+            location.href = "https://sajadanjiidanii.github.io/ColorShop/";
         }else{
             $.body.insertAdjacentHTML("afterbegin","<div class=\"alert\"><h1 id=\"massageAlert\">پسورد اشتباه است !</h1></div>");
             setTimeout(remAlert,2000);
@@ -199,6 +202,7 @@ function SWMsignIn(){
         if( isPassWord ){
             $.body.insertAdjacentHTML("afterbegin","<div class=\"alert tureAlert\"><h1 id=\"massageAlert\">خوش آمدید :)</h1></div>");
             setTimeout(remAlert,2000);
+            location.href = "https://sajadanjiidanii.github.io/ColorShop/";
         }else{
             $.body.insertAdjacentHTML("afterbegin","<div class=\"alert\"><h1 id=\"massageAlert\">پسورد اشتباه است !</h1></div>");
             setTimeout(remAlert,2000);

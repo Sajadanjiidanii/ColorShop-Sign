@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+body{
+    display: grid;
+    justify-content: center;
+    background-color: rgb(101, 101, 254);
+}
+.container-BWM{
+    width: 600px;
+    height: 350px;
+    display: grid;
+    margin-top: 30px;
+    border-radius: 60px;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr;
+    background-color: aliceblue;
+    grid-template-columns: 1fr 1fr;
+}
+/* /// Left side page /// */
+#changeForm-container{
+    color: white;
+    padding-top: 40%;
+    text-align: center;
+    background-color: skyblue;
+    border-radius: 0 60px 60px 0;
+}
+#changeForm-container > h1{
+    line-height: 25px;
+}
+#changeForm-container > p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.changeForm{
+    display: block;
+    color: white;
+    cursor: pointer;
+    width: 130px;
+    height: 35px;
+    font-size: 15px;
+    padding: 3px;
+    margin: 10px auto;
+    border-radius: 15px;
+    border: 1.5px solid white;
+    background-color: transparent;
+}
+.changeForm:hover{
+    background-color: white;
+}
+#changeForm-container > a{
+    color: white;
+}
+#changeForm-container > a:hover{
+    color: skyblue;
+}
+
+/* /// Right side page /// */
+#form-container{
+    color: black;
+    text-align: center;
+    padding-top: 20%;
+}
+#form-container input{
+    width: 170px;
+    height: 30px;
+    border: none;
+    margin-top: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    background-color: rgb(212, 212, 212);
+}
+#form-container > p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.submitForm{
+    display: block;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: white;  
+    color: rgb(101, 101, 254);
+    border: 1.5px solid rgb(101, 101, 254);
+}
+.submitForm:hover{
+    color: white;
+    background-color: rgb(101, 101, 254);
+}
+
+/* /// End BWM Style /// */
+
+/* /// Start SWM Style /// */
+.container-SWM{
+    width: 250px;
+    height: 350px;
+    margin-top: 25px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+}
+.container-SWM > #signUp-Btn {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 0 0 30px 30px;
+    border: none;
+    background-color: skyblue;
+    margin-bottom: 40px;
+}
+.container-SWM > a{
+    color: white;
+}
+.container-SWM > input {
+    display: block;
+    margin: 10px auto;
+    width: 170px;
+    border-radius: 5px;
+    border: 1.5px solid skyblue;
+    padding-right: 10px;
+}
+.container-SWM > #SWM-SignIn-Btn{
+    display: block;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 30px 30px 0 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: none;
+    background-color: skyblue;
+}
+.container-SWM > #SWM-SignUp-Btn{
+    display: block;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 30px 30px 0 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: none;
+    background-color: skyblue;
+}
+.container-SWM > p {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+/* /// Alert /// */
+.alert{
+    z-index: 1;
+    top: 10px;
+    width: auto;
+    right: 10px;
+    height: auto;
+    padding: 13px;
+    color: white;
+    position: absolute;
+    border-radius: 10px;
+    background-color: red;
+    border: 1px solid white;
+}
+.tureAlert{
+    background-color: green;
+}
+#massageAlert{
+    font-size: 12px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- /// Sign In BWM /// -->
+    <div id="container-BWM-signIn" class="container-BWM">
+        <div id="form-container">
+            <h1>ورود</h1>
+            <input id="BWM-SignIn-Name" type="text" placeholder="نام کاربری"><br>
+            <input id="BWM-SignIn-Password" type="password" placeholder="پسورد">
+            <p><a href="#">رمز را فراموش کردید ؟</a></p>
+            <button class="submitForm submitSignIn" id="BWM-SignIn-Btn" >ورود</button>
+        </div>
+
+        <div id="changeForm-container">
+            <h1>ساخت,<br> حساب!</h1>
+            <p>ثبت نام کن اگه از قبل اکانت نداری . . .</p>
+            <a class="changeForm" id="changeFormBtn" href="http://127.0.0.1:5500/?request=signUp">ثبت نام</a>
+        </div>
+    </div>
+
+    <!-- /// Sign In SWM /// -->
+    <div id="container-SWM-signIn" class="container-SWM">
+        <a id="signUp-Btn" href="http://127.0.0.1:5500/?request=signUp">ثبت نام</a>
+        <h1>ورود</h1>
+        <input id="SWM-SignIn-Name" type="text" placeholder="نام کاربری">
+        <input id="SWM-SignIn-Password" type="password" placeholder="پسورد">
+        <p><a href="#">رمز را فراموش کردید ؟</a></p>
+        <button id="SWM-SignIn-Btn" class="submitSignIn">ورود</button>
+    </div>
+
+    <!-- /// Sign Up BWM /// -->
+    <div id="container-BWM-signUp" class="container-BWM">
+        <div id="form-container">
+            <h1>ثبت نام</h1>
+            <input id="BWM-SignUp-Name" type="text" placeholder="نام کاربری"><br>
+            <input id="BWM-SignUp-Password" type="password" placeholder="پسورد">
+            <input id="BWM-SignUp-rePassword" type="password" placeholder="تکرار پسورد"><br>
+            <button class="submitForm submitSignUp" id="BWM-SignUp-Btn">ثبت نام</button>
+        </div>
+        <div id="changeForm-container">
+            <h1>ورود به,<br> حساب!</h1>
+            <p>اگر از قبل حساب داری وارد شو . . .</p>
+            <a class="changeForm" href="http://127.0.0.1:5500/?request=signIn">ورود</a>
+        </div>
+    </div>
+
+    <!-- /// Sign Up SWM /// -->
+    <div id="container-SWM-signUp" class="container-SWM">
+        <a id="signUp-Btn" href="http://127.0.0.1:5500/?request=signIn">ورود</a>
+        <h1>ثبت نام</h1>
+        <input id="SWM-SignUp-Name" type="text" placeholder="نام کاربری">
+        <input id="SWM-SignUp-Password" type="password" placeholder="پسورد">
+        <input id="SWM-SignUp-rePassword" type="password" placeholder="تکرار پسورد">
+        <button class="submitSignUp" id="SWM-SignUp-Btn">ثبت نام</button>
+    </div>
+
+</body>
+<script src="js/script.js"></script>
+</html>

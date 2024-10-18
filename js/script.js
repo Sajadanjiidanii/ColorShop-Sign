@@ -70,17 +70,18 @@ function BWMsignUp(){
         if( BWMSignUpPasswordValue && BWMSignUprePasswordValue){
 
             if( !isName ){
-    
-                if( BWMSignUpPasswordValue == BWMSignUprePasswordValue){
+                if( BWMSignUpPasswordValue.length > 8){
+                    if( BWMSignUpPasswordValue == BWMSignUprePasswordValue){
                     localStorage.setItem("Name",JSON.stringify(BWMSignUpNameValue));
                     localStorage.setItem("Password",JSON.stringify(BWMSignUpPasswordValue));
-                    localStorage.setItem("ShowName","Yes");
-                    location.href = "https://sajadanjiidanii.github.io/ColorShop/";
-                }else{
+                    }else{
                     $.body.insertAdjacentHTML("afterbegin","<div class=\"alert\"><h1 id=\"massageAlert\">پسورد درست تکرار نشده است !</h1></div>");
                     setTimeout(remAlert,2000);
+                    }
+                }else{
+                    $.body.insertAdjacentHTML("afterbegin","<div class=\"alert\"><h1 id=\"massageAlert\"> پسورد نباید کوتاه تر از 8 حرف یا رقم باشد !</h1></div>");
+                    setTimeout(remAlert,3000);
                 }
-    
             }else{
                 $.body.insertAdjacentHTML("afterbegin","<div class=\"alert\"><h1 id=\"massageAlert\">این حساب کاربری وجود دارد !</h1></div>");
                 setTimeout(remAlert,2000);
@@ -119,17 +120,18 @@ function SWMsignUp(){
         if( SWMSignUpPasswordValue && SWMSignUprePasswordValue){
 
             if( !isName ){
-    
-                if( SWMSignUpPasswordValue == SWMSignUprePasswordValue){
+                if( SWMSignUpPasswordValue.length > 8){
+                    if( SWMSignUpPasswordValue == SWMSignUprePasswordValue){
                     localStorage.setItem("Name",JSON.stringify(SWMSignUpNameValue));
                     localStorage.setItem("Password",JSON.stringify(SWMSignUpPasswordValue));
-                    localStorage.setItem("ShowName","Yes");
-                    location.href = "https://sajadanjiidanii.github.io/ColorShop/";
-                }else{
+                    }else{
                     $.body.insertAdjacentHTML("afterbegin","<div class=\"alert\"><h1 id=\"massageAlert\">پسورد درست تکرار نشده است !</h1></div>");
                     setTimeout(remAlert,2000);
+                    }
+                }else{
+                    $.body.insertAdjacentHTML("afterbegin","<div class=\"alert\"><h1 id=\"massageAlert\"> پسورد نباید کوتاه تر از 8 حرف یا رقم باشد !</h1></div>");
+                    setTimeout(remAlert,2000);
                 }
-    
             }else{
                 $.body.insertAdjacentHTML("afterbegin","<div class=\"alert\"><h1 id=\"massageAlert\">این حساب کاربری وجود دارد !</h1></div>");
                 setTimeout(remAlert,2000);
@@ -172,8 +174,6 @@ function BWMsignIn(){
         if( isPassWord ){
             $.body.insertAdjacentHTML("afterbegin","<div class=\"alert tureAlert\"><h1 id=\"massageAlert\">خوش آمدید :)</h1></div>");
             setTimeout(remAlert,2000);
-            localStorage.setItem("ShowName","Yes");
-            location.href = "https://sajadanjiidanii.github.io/ColorShop/";
         }else{
             $.body.insertAdjacentHTML("afterbegin","<div class=\"alert\"><h1 id=\"massageAlert\">پسورد اشتباه است !</h1></div>");
             setTimeout(remAlert,2000);
@@ -205,8 +205,7 @@ function SWMsignIn(){
         if( isPassWord ){
             $.body.insertAdjacentHTML("afterbegin","<div class=\"alert tureAlert\"><h1 id=\"massageAlert\">خوش آمدید :)</h1></div>");
             setTimeout(remAlert,2000);
-            localStorage.setItem("ShowName","Yes");
-            location.href = "https://sajadanjiidanii.github.io/ColorShop/";
+            location.href = "#";
         }else{
             $.body.insertAdjacentHTML("afterbegin","<div class=\"alert\"><h1 id=\"massageAlert\">پسورد اشتباه است !</h1></div>");
             setTimeout(remAlert,2000);
